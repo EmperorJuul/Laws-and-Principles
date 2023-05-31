@@ -1,0 +1,19 @@
+.main {
+  text-align: center;
+}
+
+.header {
+  background-color: blueviolet;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border: black;
+}
+
+.law {
+  margin-left: 12%;
+  margin-right: 12%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

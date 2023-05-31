@@ -1,0 +1,28 @@
+<div class="law">
+  <h1>{{currentLaw?.title}}</h1>
+  <h2>{{currentLaw?.law}}</h2>
+
+  <p>
+    {{currentLaw?.description}}
+  </p>
+  <img src="{{currentLaw?.imgloc}}" width="400px" height="400px">
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <form action="{{currentLaw?.wikipedia}}">
+      <button class="btn btn-light">Wikipedia</button>
+    </form>
+  </div>
+
+  <div class="col-6">
+    <!--    TODO button functie geven   -->
+    <button class="btn btn-light">Vorige</button>
+  </div>
+
+  <div class="col">
+    <button class="btn btn-light" (click)="getNextLaw()">Volgende</button>
+  </div>
+</div>
+
+

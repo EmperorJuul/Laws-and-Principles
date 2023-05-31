@@ -1,0 +1,27 @@
+{
+  "laws": [
+    {
+      "id": 1,
+      "title": "Murphy's law",
+      "law": "Anything that can go wrong will go wrong",
+      "description": "Murphy's law is an adage or epigram that is typically stated as: \"Anything that can go wrong will go wrong.\"\nIn some formulations, it is extended to \"Anything that can go wrong will go wrong, and at the worst possible time.\"",
+      "imgloc": "assets/matthew.png",
+      "wikipedia": "https://en.wikipedia.org/wiki/Murphy%27s_law#:~:text=Murphy%27s%20law%20is%20an%20adage,at%20the%20worst%20possible%20time.%22"
+    },
+    {
+      "id": 2,
+      "title": "Moore's law",
+      "law": "Exponential growth is at the heart of the rapid increase of computing capabilities.",
+      "description": "Moore's law is the observation that the number of transistors in an integrated circuit (IC) doubles about every two years.\nMoore's law is an observation and projection of a historical trend.\nRather than a law of physics, it is an empirical relationship linked to gains from experience in production.",
+      "imgloc": "assets/mooreslaw.png",
+      "wikipedia": "https://en.wikipedia.org/wiki/Moore%27s_law"
+    },
+    {
+      "id": 3,
+      "title": "Buttered toast phenomenon",
+      "description": "The buttered toast phenomenon is an observation that buttered toast tends to land butter-side down after it falls.\nIt is used as an idiom representing pessimistic outlooks.[1]\nVarious people have attempted to determine whether there is an actual tendency for bread to fall in this fashion, with varying results.",
+      "imgloc": "assets/butteredtoast.png",
+      "wikipedia": "https://en.wikipedia.org/wiki/Buttered_toast_phenomenon"
+    }
+  ]
+}

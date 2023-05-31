@@ -1,0 +1,28 @@
+<div class="lawlist">
+  <div class="row">
+    <div class="col">
+
+      <div class="row" style="margin: 10px">
+        <div class="col-1"></div>
+        <div class="col"><b>Title</b></div>
+        <div class="col"><b>Description</b></div>
+        <div class="col"><b>Actions</b></div>
+        <div class="col-1"></div>
+      </div>
+
+      <div class="row" *ngFor="let law of laws">
+        <div class="col-1"></div>
+        <div class="col">{{law.title}}</div>
+        <div class="col">{{law.description}}</div>
+        <div class="col">
+          <a href="edit">
+            <button class="btn btn-success">Edit</button>
+          </a>
+          <button class="btn btn-danger" (click)="deleteLaw(law.id)">Delete</button>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
