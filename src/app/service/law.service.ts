@@ -8,7 +8,7 @@ import {Observable} from "rxjs";
 })
 export class LawService {
 
-  baseUrl: string = "http://localhost:3000";
+  baseUrl: string = "http://localhost:9080/rest/api";
   laws: Law[] = [];
 
   constructor(private http: HttpClient) {
@@ -16,10 +16,16 @@ export class LawService {
 
   getAll(): Observable<Law[]> {
     let laws: Law[];
-    return this.http.get<Law[]>(`${this.baseUrl}/laws`);
+    return this.http.get<Law[]>(this.baseUrl + '/laws');
+  }
+
+  getLaw() {
+    return undefined;
   }
 
   deleteLaw(id: number) {
-    return this.http.delete(`${this.baseUrl}/laws/` + id);
+    return this.http.delete(this.baseUrl + '/laws' + id);
   }
+
+
 }

@@ -15,8 +15,8 @@
         <div class="col">{{law.title}}</div>
         <div class="col">{{law.description}}</div>
         <div class="col">
-          <a href="edit">
-            <button class="btn btn-success">Edit</button>
+          <a>
+            <button routerLink="/edit/{{law.id}}" class="btn btn-success">Edit</button>
           </a>
           <button class="btn btn-danger" (click)="deleteLaw(law.id)">Delete</button>
         </div>

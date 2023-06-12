@@ -11,7 +11,7 @@ export class LawsComponent {
 
   index: number = 0;
   laws: Law[] = [];
-  currentLaw: any;
+  currentLaw?: Law
 
   constructor(private lawService: LawService) {
     this.getAllLaws();
@@ -28,5 +28,6 @@ export class LawsComponent {
     this.currentLaw = this.laws[this.index]
     this.index = (this.index + 1) % this.laws.length
   }
+
 
 }

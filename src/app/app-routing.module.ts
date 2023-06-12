@@ -7,7 +7,8 @@ import {EditComponent} from "./components/edit/edit.component";
 const routes: Routes = [
   {path: '', component: LawsComponent},
   {path: 'lawlist', component: LawlistComponent},
-  {path: 'edit', component: EditComponent}
+  {path: 'edit/:id', component: EditComponent},
+
 ];
 
 @NgModule({
