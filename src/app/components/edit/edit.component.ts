@@ -22,6 +22,10 @@ export class EditComponent implements OnInit {
     this.lawId = this.route.snapshot.paramMap.get('id');
   }
 
+  save() {
+
+  }
+
 
 }
 

@@ -1,1 +1,31 @@
-<p>edit works!</p>
+<form (ngSubmit)="save()">
+  <div class="form-group">
+    <div>
+      <label for="title">Title</label> <br> <input type="text" id="title" class="form-control" placeholder="Title...">
+    </div>
+
+    <div>
+      <label for="law">Law</label> <br> <input type="text" id="Law" class="form-control" placeholder="Law...">
+    </div>
+
+    <div>
+      <label for="description">Description</label> <br> <textarea rows="5" id="description" class="form-control"
+      placeholder="Description..."></textarea>
+    </div>
+
+    <div>
+      <label for="wikipedia">Wikipedia</label> <br> <input type="text" id="wikipedia" class="form-control"
+      placeholder="Wikipedia...">
+    </div>
+
+    <div>
+      <label for="image" style="margin-top: 50px">Image</label> <br> <input type="file" id="image" />
+    </div>
+
+    <div class="col">
+      <input type="submit" class="btn btn-primary" style="margin-top: 50px">
+    </div>
+
+
+  </div>
+</form>
