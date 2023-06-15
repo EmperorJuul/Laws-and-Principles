@@ -16,9 +16,8 @@ export class EditComponent implements OnInit {
   lawForm: FormGroup;
 
 
-  constructor(private route: ActivatedRoute,
-              private lawService: LawService,
-              private fb: FormBuilder) {
+  constructor(private route: ActivatedRoute, private lawService: LawService, private fb: FormBuilder) {
+
     this.lawForm = this.fb.group({
       title: '',
       description: '',
@@ -29,15 +28,13 @@ export class EditComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.lawId = this.route.snapshot.paramMap.get('id');
 
+    this.lawId = this.route.snapshot.paramMap.get('id');
   }
 
   save() {
+    console.log(this.lawForm.value.encodedImage);
     this.lawService.addLaw(this.lawForm.value);
   }
-
-
-  protected readonly Law = Law;
 }
 
