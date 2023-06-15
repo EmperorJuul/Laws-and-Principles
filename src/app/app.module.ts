@@ -9,7 +9,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {LawsComponent} from './components/laws/laws.component';
 import {LawlistComponent} from './components/lawlist/lawlist.component';
 import {EditComponent} from './components/edit/edit.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import {FormsModule} from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

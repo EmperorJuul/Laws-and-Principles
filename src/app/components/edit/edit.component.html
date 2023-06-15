@@ -1,25 +1,26 @@
-<form (ngSubmit)="save()">
+<form (ngSubmit)="save()" [formGroup]="lawForm">
   <div class="form-group">
     <div>
-      <label for="title">Title</label> <br> <input type="text" id="title" class="form-control" placeholder="Title...">
+      <label for="title">Title</label> <br> <input type="text" id="title" name="title" class="form-control" placeholder="Title..."
+      formControlName="title">
     </div>
 
     <div>
-      <label for="law">Law</label> <br> <input type="text" id="Law" class="form-control" placeholder="Law...">
+      <label for="law">Law</label> <br> <input type="text" id="Law" class="form-control" placeholder="Law..." formControlName="law">
     </div>
 
     <div>
       <label for="description">Description</label> <br> <textarea rows="5" id="description" class="form-control"
-      placeholder="Description..."></textarea>
+      placeholder="Description..." formControlName="description"></textarea>
     </div>
 
     <div>
       <label for="wikipedia">Wikipedia</label> <br> <input type="text" id="wikipedia" class="form-control"
-      placeholder="Wikipedia...">
+      placeholder="Wikipedia..." formControlName="wikipedia">
     </div>
 
     <div>
-      <label for="image" style="margin-top: 50px">Image</label> <br> <input type="file" id="image" />
+      <label for="image" style="margin-top: 50px">Image</label> <br> <input type="file" id="image" formControlName="encodedImage" />
     </div>
 
     <div class="col">
